@@ -281,7 +281,7 @@ main:
 			throwError("Library ${it[0]} does not have read2 fastq file")
 		}
 
-		if (it[3].any {fq -> fq.getName().contains("_I1_") or fq.getName().contains("_I1.")} == false) {
+		if (it[3].any {fq -> fq.getName().contains("_I2_") or fq.getName().contains("_I2.")} == false) {
 			throwError("Library ${it[0]} does not have index fastq file")
 		}
 	}
